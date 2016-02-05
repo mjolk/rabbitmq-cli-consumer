@@ -78,7 +78,7 @@ func (c *Consumer) Consume() {
 				}
 				retry, ok := d.Headers["retry_count"]
 				if !ok {
-					retry = "0"
+					retry = "1"
 				}
 				c.InfLogger.Println(fmt.Sprintf("retry %s", retry))
 
